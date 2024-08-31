@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Import Lato font */
+body {
+    font-family: 'Lora', sans-serif;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Green text for "org" */
+.text-green {
+    color: #28a745; /* Green color for "org" */
+}
+
+/* Navbar brand text */
+.brand-text {
+    margin: .625rem 0px 0px .625rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Nav links styling */
+.nav-link {
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 1rem; /* Set font size to 1 rem */
+    color: #333;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #28a745; /* Change color on hover */
+}
+
+/* Sign in button styling */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px; /* Rounded button */
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem; /* Font size in rem */
+    font-weight: 600; /* Make the button text somewhat bold */
+}
+
+.btn-success:hover {
+    background-color: white;
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+.carousel-container {        
+    margin: 1rem auto;     /* Center the carousel */
+}
+
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.375rem 4.375rem;
+}
+
+.text-content {
+  max-width: 80%;
+}
+
+.about-container h1 {
+  font-size: 2.1875rem;
+  color: #2c3e50;
+  font-weight: 50rem;
+  font-family: 'Lora', serif;
+}
+
+.about-container p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 15px;
+  font-family: 'Ledger', serif;
+}
+
+.about-container img{
+  width: 30rem;
+}
+
+h2{
+  font-family: 'Ledger', serif;
+}
+
+footer {
+  background-color: #111; /* Dark background */
+}
+
+footer h5 {
+  font-size: 1.5rem; /* Larger font size for headings */
+  border-bottom: 2px solid #db4e3c; /* Accent border under headings */
+  padding-bottom: 10px; /* Space between heading and text */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+footer form {
+  margin-top: 10px; /* Space between heading and form */
+}
+
+footer input,
+footer textarea {
+  background-color: #222; /* Darker background for input fields */
+  border: 1px solid #db4e3c; /* Accent border for input fields */
+  color: white; /* White text */
+}
+
+footer input::placeholder,
+footer textarea::placeholder {
+  color: #bbb; /* Lighter placeholder color */
+}
+
+footer button {
+  background-color: #db4e3c; /* Accent button color */
+  border: none; /* No border */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+footer button:hover {
+  background-color: #11a3bd; /* Change on hover */
+}
+
+footer .social-icons a {
+  font-size: 1.5rem; /* Size for social icons */
+}
+
+footer .social-icons a:hover {
+  color: #db4e3c; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  footer h5 {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  footer .social-icons {
+      justify-content: center; /* Center icons on mobile */
+  }
+}
+
+
+
+
+
+
+
