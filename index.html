@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="./style.css">
     <title>Kerala Tourism</title>
     <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Import Ledger font -->
-    <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
+    <!-- Import Lora font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -78,13 +80,13 @@
 
 <div class="about-container">
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <h1>Welcome to Kerala: God's Own Country</h1>
             <p>Kerala, located on the southwestern coast of India, is often referred to as "God's Own Country" for its breathtaking landscapes and rich cultural heritage. The state boasts serene backwaters, lush tea gardens in Munnar, and pristine beaches that invite relaxation and exploration. Visitors can enjoy the tranquil waters of Alleppey on traditional houseboats, drifting through interconnected lakes and rivers while witnessing the peaceful rhythms of life along the banks.</p>
             <p>In addition to its natural beauty, Kerala is a cultural treasure trove. The state is renowned for its classical dance forms, such as Kathakali and Mohiniyattam, which bring ancient stories to life through intricate movements and vibrant costumes. Kerala’s colorful festivals, like Onam and Vishu, showcase its rich traditions and customs. The local cuisine, featuring coconut, spices, and fresh seafood, tantalizes the taste buds with dishes like Malabar biryani and Payasam. With its unique blend of adventure and tranquility, Kerala promises an unforgettable experience for every traveler.</p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 py-4 image-content">
-            <img src="./assets/kerala culture.png" alt="kerala-culture">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 py-4 image-content d-flex justify-content-center align-items-center">
+            <img src="./assets/kerala culture.png" alt="kerala-culture" class="img-fluid">
         </div>
     </div>
 </div>
@@ -95,96 +97,108 @@
     <p>Explore the must-visit destinations in Kerala, each offering a unique experience.</p>
 </div>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <!-- Alleppey -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/allappey.jpeg" class="card-img-top" alt="Alleppey" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Alleppey</h5>
-                    <p class="card-text">Known for its backwaters and houseboats, Alleppey is a paradise for nature lovers.</p>
+<div id="whereToGoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <!-- Alleppey -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/allappey.jpeg" class="card-img-top" alt="Alleppey" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Alleppey</h5>
+                            <p class="card-text">Known for its backwaters and houseboats, Alleppey is a paradise for nature lovers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Munnar -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/munnar.jpeg" class="card-img-top" alt="Munnar" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Munnar</h5>
+                            <p class="card-text">Famous for its tea plantations, Munnar offers breathtaking views and pleasant weather.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Varkala -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/varkala.jpeg" class="card-img-top" alt="Varkala" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Varkala</h5>
+                            <p class="card-text">A beautiful beach destination with cliffs and natural springs, perfect for relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jadayu Center -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/jadayu.jpeg" class="card-img-top" alt="Jadayu Center" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jadayu Center</h5>
+                            <p class="card-text">A unique adventure park showcasing the legend of Jatayu from the Ramayana.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Munnar -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/munnar.jpeg" class="card-img-top" alt="Munnar" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Munnar</h5>
-                    <p class="card-text">Famous for its tea plantations, Munnar offers breathtaking views and pleasant weather.</p>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Fort Kochi -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/fortKochi.jpg" class="card-img-top" alt="Fort Kochi" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fort Kochi</h5>
+                            <p class="card-text">Rich in history and culture, known for colonial architecture and art galleries. With beautiful food varieties.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Varkala -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/varkala.jpeg" class="card-img-top" alt="Varkala" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Varkala</h5>
-                    <p class="card-text">A beautiful beach destination with cliffs and natural springs, perfect for relaxation.</p>
+                <!-- Thekkady -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/Thekkady.jpg" class="card-img-top" alt="Thekkady" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Thekkady</h5>
+                            <p class="card-text">Home to the Periyar Wildlife Sanctuary, offering wildlife spotting and spice tours.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Jadayu Center -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/jadayu.jpeg" class="card-img-top" alt="Jadayu Center" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Jadayu Center</h5>
-                    <p class="card-text">A unique adventure park showcasing the legend of Jatayu from the Ramayana.</p>
+                <!-- Wayanad -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/wayanad.jpg" class="card-img-top" alt="Wayanad" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wayanad</h5>
+                            <p class="card-text">Famous for its lush green hills and waterfalls, Wayanad is perfect for trekking.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Fort Kochi -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/fortKochi.jpg" class="card-img-top" alt="Fort Kochi" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Fort Kochi</h5>
-                    <p class="card-text">Rich in history and culture, known for colonial architecture and art galleries.With beautiful food varieties.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Thekkady -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/Thekkady.jpg" class="card-img-top" alt="Thekkady" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Thekkady</h5>
-                    <p class="card-text">Home to the Periyar Wildlife Sanctuary, offering wildlife spotting and spice tours.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Wayanad -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/wayanad.jpg" class="card-img-top" alt="Wayanad" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Wayanad</h5>
-                    <p class="card-text">Famous for its lush green hills and waterfalls, Wayanad is perfect for trekking.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Kumarakom -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card mb-4 shadow border-0 equal-card">
-                <img src="./assets/where_to_go/kumarakom.jpeg" class="card-img-top" alt="Kumarakom" style="height: 250px; object-fit: cover;">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Kumarakom</h5>
-                    <p class="card-text">Located on the banks of Vembanad Lake, known for its backwaters and bird sanctuary.</p>
+                <!-- Kumarakom -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-4 shadow border-0 equal-card">
+                        <img src="./assets/where_to_go/kumarakom.jpeg" class="card-img-top" alt="Kumarakom" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kumarakom</h5>
+                            <p class="card-text">Located on the banks of Vembanad Lake, known for its backwaters and bird sanctuary.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#whereToGoCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#whereToGoCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
 </div>
 
 <!-- Activities Section -->
@@ -198,60 +212,61 @@
 
         <!-- Houseboat Ride -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Houseboat Ride</h3>
-                <img src="./assets/activities/boatride.jpg" class="img-fluid" alt="Houseboat Ride" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/boatride.jpg" class="img-fluid rounded" alt="Houseboat Ride" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Experience the tranquility of Kerala's backwaters on a traditional houseboat ride. Glide through lush landscapes and observe the local lifestyle from the comfort of your boat.</p>
             </div>
         </div>
 
         <!-- Ayurvedic Spa -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Ayurvedic Spa</h3>
-                <img src="./assets/activities/ayurvedic spa.jpg" class="img-fluid" alt="Ayurvedic Spa" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/ayurvedic spa.jpg" class="img-fluid rounded" alt="Ayurvedic Spa" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Indulge in rejuvenating Ayurvedic treatments that help you relax and restore your body and mind. Kerala is renowned for its holistic wellness therapies.</p>
             </div>
         </div>
 
         <!-- Trekking -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Trekking</h3>
-                <img src="./assets/activities/trekking.jpg" class="img-fluid" alt="Trekking" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/trekking.jpg" class="img-fluid rounded" alt="Trekking" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Embark on scenic treks through the Western Ghats. Discover stunning viewpoints, diverse flora, and fauna while enjoying the fresh mountain air.</p>
             </div>
         </div>
 
         <!-- Kathakali Dance -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Kathakali Dance</h3>
-                <img src="./assets/activities/kathakali.jpeg" class="img-fluid" alt="Kathakali Dance" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/kathakali.jpeg" class="img-fluid rounded" alt="Kathakali Dance" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Immerse yourself in Kerala’s vibrant culture by witnessing a captivating Kathakali dance performance. This traditional art form features elaborate costumes and expressive storytelling.</p>
             </div>
         </div>
 
         <!-- Wildlife Safari -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Wildlife Safari</h3>
-                <img src="./assets/activities/safari.jpg" class="img-fluid" alt="Wildlife Safari" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/safari.jpg" class="img-fluid rounded" alt="Wildlife Safari" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Join an exciting wildlife safari at Periyar Wildlife Sanctuary. Spot elephants, bison, and various bird species in their natural habitat.</p>
             </div>
         </div>
 
         <!-- Beach Activities -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="journal-entry p-4 mb-3 border border-light rounded">
+            <div class="journal-entry p-4 mb-3 border border-light rounded shadow">
                 <h3 class="journal-title">Beach Activities</h3>
-                <img src="./assets/activities/beach.jpg" class="img-fluid" alt="Beach Activities" style="height: 250px; object-fit: cover;">
+                <img src="./assets/activities/beach.jpg" class="img-fluid rounded" alt="Beach Activities" style="height: 250px; object-fit: cover;">
                 <p class="journal-text mt-3">Relax and enjoy thrilling water sports at Kerala's beautiful beaches. From surfing to parasailing, there’s something for everyone!</p>
             </div>
         </div>
 
     </div>
 </div>
+
 </div>
 
 <!-- Footer Section -->
@@ -284,18 +299,27 @@
             <div class="col-lg-4 col-md-12 mb-4">
                 <h5>Follow Us</h5>
                 <div class="d-flex justify-content-start social-icons">
-                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white" style="font-size: 1.75rem;"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;">
+                        <img src="./assets/icons/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;">
+                        <img src="./assets/icons/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="text-white me-3" style="font-size: 1.75rem;">
+                        <img src="./assets/icons/youtube.png" alt="YouTube">
+                    </a>
+                    <a href="#" class="text-white" style="font-size: 1.75rem;">
+                        <img src="./assets/icons/twitter.png" alt="Twitter">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="text-center mt-4">
-            <p>&copy; 2024 Kerala Tourism. All rights reserved.</p>
+            <p>&copy; 2024 Kerala Tourism. All rights reserved.</p> 
         </div>
     </div>
 </footer>
+
 
 <!-- Include Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

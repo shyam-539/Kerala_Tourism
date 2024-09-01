@@ -28,7 +28,7 @@ body {
 
 /* Nav links styling */
 .nav-link {
-    font-family: 'Monsterrat', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1rem; /* Set font size to 1 rem */
     color: #333;
     margin-right: 1rem;
@@ -59,99 +59,107 @@ body {
     margin: 1rem auto;     /* Center the carousel */
 }
 
-
 .about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 4.375rem 4.375rem;
+  padding: 20px; /* Add padding for better spacing */
 }
 
-.text-content {
-  max-width: 80%;
-}
-
-.about-container h1 {
-  font-size: 2.1875rem;
-  color: #2c3e50;
-  font-weight: 50rem;
-  font-family: 'Lora', serif;
-}
-
-.about-container p {
-  font-size: 1rem;
-  color: #4a4a4a;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 15px;
-  font-family: 'Ledger', serif;
-}
-
-.about-container img{
-  width: 30rem;
-}
-
-h2{
-  font-family: 'Ledger', serif;
-}
-
-footer {
-  background-color: #111; /* Dark background */
-}
-
-footer h5 {
-  font-size: 1.5rem; /* Larger font size for headings */
-  border-bottom: 2px solid #db4e3c; /* Accent border under headings */
-  padding-bottom: 10px; /* Space between heading and text */
-}
-
-footer p {
-  margin: 0; /* Remove default margin */
-}
-
-footer form {
-  margin-top: 10px; /* Space between heading and form */
-}
-
-footer input,
-footer textarea {
-  background-color: #222; /* Darker background for input fields */
-  border: 1px solid #db4e3c; /* Accent border for input fields */
-  color: white; /* White text */
-}
-
-footer input::placeholder,
-footer textarea::placeholder {
-  color: #bbb; /* Lighter placeholder color */
-}
-
-footer button {
-  background-color: #db4e3c; /* Accent button color */
-  border: none; /* No border */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-footer button:hover {
-  background-color: #11a3bd; /* Change on hover */
-}
-
-footer .social-icons a {
-  font-size: 1.5rem; /* Size for social icons */
-}
-
-footer .social-icons a:hover {
-  color: #db4e3c; /* Change color on hover */
-}
-
+/* General Responsive Adjustments */
 @media (max-width: 768px) {
-  footer h5 {
-      font-size: 1.25rem; /* Smaller font size for mobile */
+  .where_to_go_container {
+      padding: 30px 15px; /* Reduced padding for smaller screens */
   }
 
-  footer .social-icons {
-      justify-content: center; /* Center icons on mobile */
+  .section-title {
+      font-size: 2rem; /* Smaller title on tablets */
   }
 }
+
+@media (max-width: 576px) {
+  .where_to_go_container {
+      padding: 20px 10px; /* Further reduced padding for mobile */
+  }
+
+  .section-title {
+      font-size: 1.75rem; /* Smaller title on mobile */
+  }
+
+  .card {
+      margin-bottom: 15px; /* Adjust margin on mobile */
+  }
+}
+
+
+/* General styles */
+footer {
+  background-color: #343a40; /* Dark background for the footer */
+  color: #ffffff; /* White text color */
+}
+
+/* Responsive adjustments */
+footer .row {
+  justify-content: center;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  gap: 1rem; /* Add spacing between icons */
+}
+
+.social-icons a img {
+  width: 1.75rem;
+  height: 1.75rem;
+  filter: invert(100%); /* Ensures icons are white */
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .social-icons a img {
+      width: 2rem;
+      height: 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .social-icons a img {
+      width: 2.25rem;
+      height: 2.25rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .social-icons a img {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+}
+
+/* Smaller devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  .social-icons {
+      justify-content: space-around;
+  }
+
+  .social-icons a img {
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+  
+  footer .container {
+      padding: 2rem 1rem;
+  }
+
+  footer .row > div {
+      text-align: center;
+  }
+}
+
 
 
 
