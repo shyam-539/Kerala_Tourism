@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
-/* Import Lato font */
+
+/* Import Lora font */
 body {
     font-family: 'Lora', sans-serif;
 }
 
-.wrapper{
-  width: 90%;
-  margin: 0 auto;
+/* Wrapper */
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* Green text for "org" */
@@ -20,7 +23,7 @@ body {
 
 /* Navbar brand text */
 .brand-text {
-    margin: .625rem 0px 0px .625rem;
+    margin: .625rem 0 0 .625rem;
     font-size: 1.1rem;
     font-weight: bold;
     color: #333;
@@ -55,115 +58,190 @@ body {
     border: 2px solid #28a745;
 }
 
+/* Carousel Container */
 .carousel-container {        
-    margin: 1rem auto;     /* Center the carousel */
+    margin: 1rem auto; /* Center the carousel */
 }
 
+/* About Section */
 .about-container {
-  padding: 20px; /* Add padding for better spacing */
+    padding: 1.25rem; /* Add padding for better spacing */
+    margin: 6rem 1rem;
 }
 
-/* General Responsive Adjustments */
-@media (max-width: 768px) {
-  .where_to_go_container {
-      padding: 30px 15px; /* Reduced padding for smaller screens */
-  }
-
-  .section-title {
-      font-size: 2rem; /* Smaller title on tablets */
-  }
+.resorts-container{
+  padding-top: 5rem;
 }
 
-@media (max-width: 576px) {
-  .where_to_go_container {
-      padding: 20px 10px; /* Further reduced padding for mobile */
-  }
-
-  .section-title {
-      font-size: 1.75rem; /* Smaller title on mobile */
-  }
-
-  .card {
-      margin-bottom: 15px; /* Adjust margin on mobile */
-  }
+/* Activities Section */
+.activities-container {
+    margin: 8rem 0;
 }
 
+.activities-section {
+    background-color: #f5f5f5; /* Beige color */
+    padding: 20px;
+}
 
-/* General styles */
+/* Cards */
+.activity-card {
+    background: linear-gradient(to top right, #f8f9fa, #e9ecef);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #343a40;
+    font-weight: 500;
+}
+
+.card-body ul li {
+    font-size: 1.1rem;
+}
+
+/* Card Image */
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+@media (max-width: 991.98px) { /* Medium screens */
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767.98px) { /* Small screens */
+    .card-img-top {
+        height: 160px;
+    }
+}
+
+/* See More Button */
+.see-more-btn {
+    background-color: #11a3bd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #0e8aa4;
+    transform: translateY(-3px);
+}
+
+/* Footer */
 footer {
-  background-color: #343a40; /* Dark background for the footer */
-  color: #ffffff; /* White text color */
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
 }
 
-/* Responsive adjustments */
+/* Footer - Responsive Adjustments */
 footer .row {
-  justify-content: center;
+    justify-content: center;
+}
+
+footer .container {
+    padding: 2rem 1rem;
+}
+
+footer .row > div {
+    text-align: center;
 }
 
 /* Social Icons Styling */
 .social-icons {
-  gap: 1rem; /* Add spacing between icons */
+    gap: 1rem; /* Add spacing between icons */
 }
 
 .social-icons a img {
-  width: 1.75rem;
-  height: 1.75rem;
-  filter: invert(100%); /* Ensures icons are white */
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    width: 1.75rem;
+    height: 1.75rem;
+    filter: invert(100%); /* Ensures icons are white */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 .social-icons a:hover img {
-  transform: scale(1.2); /* Slightly enlarge icons on hover */
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
 }
+
+/* Media Queries */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .social-icons a img {
-      width: 2rem;
-      height: 2rem;
-  }
+    .social-icons a img {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .social-icons a img {
-      width: 2.25rem;
-      height: 2.25rem;
-  }
+    .social-icons a img {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .social-icons a img {
-      width: 2.5rem;
-      height: 2.5rem;
-  }
+    .social-icons a img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 /* Smaller devices (phones, 576px and down) */
 @media (max-width: 576px) {
-  .social-icons {
-      justify-content: space-around;
-  }
+    .social-icons {
+        justify-content: space-around;
+    }
 
-  .social-icons a img {
-      width: 1.5rem;
-      height: 1.5rem;
-  }
-  
-  footer .container {
-      padding: 2rem 1rem;
-  }
+    .social-icons a img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-  footer .row > div {
-      text-align: center;
-  }
+    footer .container {
+        padding: 2rem 1rem;
+    }
+
+    footer .row > div {
+        text-align: center;
+    }
 }
 
+/* General Responsive Adjustments */
+@media (max-width: 768px) {
+    .where_to_go_container {
+        padding: 30px 15px; /* Reduced padding for smaller screens */
+    }
 
+    .section-title {
+        font-size: 2rem; /* Smaller title on tablets */
+    }
+}
 
+@media (max-width: 576px) {
+    .where_to_go_container {
+        padding: 20px 10px; /* Further reduced padding for mobile */
+    }
 
+    .section-title {
+        font-size: 1.75rem; /* Smaller title on mobile */
+    }
 
+    .card {
+        margin-bottom: 15px; /* Adjust margin on mobile */
+    }
+}
 
-
-
+/* Miscellaneous Containers */
+.conatiner {
+    margin: 8rem 0;
+}
