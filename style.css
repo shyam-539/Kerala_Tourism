@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ body {
 
 /* Green text for "org" */
 .text-green {
-    color: #28a745; /* Green color for "org" */
+    color: #28a745;
 }
 
 /* Navbar brand text */
@@ -32,13 +33,13 @@ body {
 /* Nav links styling */
 .nav-link {
     font-family: 'Lora', serif;
-    font-size: 1rem; /* Set font size to 1 rem */
+    font-size: 1rem;
     color: #333;
     margin-right: 1rem;
 }
 
 .nav-link:hover {
-    color: #28a745; /* Change color on hover */
+    color: #28a745;
 }
 
 /* Sign in button styling */
@@ -46,10 +47,10 @@ body {
     background-color: #28a745;
     color: white;
     padding: 0.5rem 1.5rem;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     font-family: 'Lato', sans-serif;
-    font-size: 1rem; /* Font size in rem */
-    font-weight: 600; /* Make the button text somewhat bold */
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .btn-success:hover {
@@ -59,14 +60,41 @@ body {
 }
 
 /* Carousel Container */
-.carousel-container {        
-    margin: 1rem auto; /* Center the carousel */
+.carousel-container {
+    margin: 1rem auto;
 }
 
 /* About Section */
-.about-container {
-    padding: 1.25rem; /* Add padding for better spacing */
+.about-section {
+    padding: 1.25rem;
     margin: 6rem 1rem;
+}
+
+.about-section .display-4 {
+    font-size: 2.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+}
+
+/* Where to go section */
+.where-to-go .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.where-to-go p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.where-to-go .card {
+    transition: transform 0.3s;
+}
+
+.where-to-go .card:hover {
+    transform: scale(1.05);
 }
 
 /* Activities Section */
@@ -75,11 +103,10 @@ body {
 }
 
 .activities-section {
-    background-color: #f5f5f5; /* Beige color */
+    background-color: #f5f5f5;
     padding: 20px;
 }
 
-/* Cards */
 .activity-card {
     background: linear-gradient(to top right, #f8f9fa, #e9ecef);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -99,22 +126,9 @@ body {
     font-size: 1.1rem;
 }
 
-/* Card Image */
 .card-img-top {
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-@media (max-width: 991.98px) { /* Medium screens */
-    .card-img-top {
-        height: 180px;
-    }
-}
-
-@media (max-width: 767.98px) { /* Small screens */
-    .card-img-top {
-        height: 160px;
-    }
+    height: 200px;
+    object-fit: cover;
 }
 
 /* See More Button */
@@ -133,11 +147,10 @@ body {
 
 /* Footer */
 footer {
-    background-color: #343a40; /* Dark background for the footer */
-    color: #ffffff; /* White text color */
+    background-color: #343a40;
+    color: white;
 }
 
-/* Footer - Responsive Adjustments */
 footer .row {
     justify-content: center;
 }
@@ -152,18 +165,18 @@ footer .row > div {
 
 /* Social Icons Styling */
 .social-icons {
-    gap: 1rem; /* Add spacing between icons */
+    gap: 1rem;
 }
 
 .social-icons a img {
     width: 1.75rem;
     height: 1.75rem;
-    filter: invert(100%); /* Ensures icons are white */
+    filter: invert(100%);
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
 .social-icons a:hover img {
-    transform: scale(1.2); /* Slightly enlarge icons on hover */
+    transform: scale(1.2);
 }
 
 /* Media Queries */
@@ -184,7 +197,7 @@ footer .row > div {
     }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices (1200px and up) */
 @media (min-width: 1200px) {
     .social-icons a img {
         width: 2.5rem;
@@ -194,10 +207,6 @@ footer .row > div {
 
 /* Smaller devices (phones, 576px and down) */
 @media (max-width: 576px) {
-    .social-icons {
-        justify-content: space-around;
-    }
-
     .social-icons a img {
         width: 1.5rem;
         height: 1.5rem;
@@ -210,34 +219,4 @@ footer .row > div {
     footer .row > div {
         text-align: center;
     }
-}
-
-/* General Responsive Adjustments */
-@media (max-width: 768px) {
-    .where_to_go_container {
-        padding: 30px 15px; /* Reduced padding for smaller screens */
-    }
-
-    .section-title {
-        font-size: 2rem; /* Smaller title on tablets */
-    }
-}
-
-@media (max-width: 576px) {
-    .where_to_go_container {
-        padding: 20px 10px; /* Further reduced padding for mobile */
-    }
-
-    .section-title {
-        font-size: 1.75rem; /* Smaller title on mobile */
-    }
-
-    .card {
-        margin-bottom: 15px; /* Adjust margin on mobile */
-    }
-}
-
-/* Miscellaneous Containers */
-.conatiner {
-    margin: 8rem 0;
 }
